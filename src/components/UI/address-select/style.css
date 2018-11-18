@@ -1,0 +1,78 @@
+.body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
+.movingButtonsWrap {
+  margin-right: 12px;
+}
+
+.movingButton.movingButton {
+  min-width: auto;
+  padding: 5px 0;
+  width: 24px;
+  height: 16px;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 2px;
+  color: #344563;
+}
+
+.movingButton span {
+  position: relative;
+  top: -8px;
+  transform: scale(0.75);
+}
+
+.movingButton:first-child {
+  margin-bottom: 1px;
+}
+
+.pointHeader {
+  width: 90px;
+  margin-right: 8px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #3e3f42;
+}
+
+.closeButton.closeButton {
+  min-width: auto;
+  width: 24px;
+  height: 24px;
+  min-height: 0;
+  margin-left: auto;
+  margin-right: 18px;
+  padding: 0;
+  background-color: transparent;
+}
+
+.inputWrap {
+  width: 100%;
+  fill: #4786ff;
+}
+
+.iconWrap {
+  position: relative;
+  left: 8px;
+}
+
+.inputInner.inputInner {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.locationSelect {
+  position: relative;
+}
+
+.locationSelectIcon {
+  z-index: 1;
+  position: absolute;
+  fill: #4786ff;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}

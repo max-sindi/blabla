@@ -1,0 +1,6 @@
+{
+  "short_name": "GOL Trucks",
+  "name": "GOL Trucks Logistc Application",
+  "gcm_sender_id_comment": "For OneSignal Web Push Notifications, Do Not Change ID",
+  "gcm_sender_id": "482941778795"
+}

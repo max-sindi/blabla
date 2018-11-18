@@ -1,0 +1,81 @@
+.main {
+    width: 70%;
+}
+
+.offers_wrap {
+  max-height: 350px;
+  overflow: auto;
+}
+
+.offers__innerRow {
+  width: 100%;
+}
+
+div.offers__loaderWrap {
+  display: block;
+  margin: 30px auto 0;
+}
+
+.newOffers__itemExpanding > div {
+  width: 100%;
+}
+
+button.order__tabsItem {
+  max-width: 100%;
+  width: 50%;
+}
+
+.newOffers__item {
+  display: flex;
+  width: 100%;
+  padding: 20px 10px;
+  margin-bottom: 10px;
+  border: 1px solid #000;
+  justify-content: space-between;
+}
+
+.offer__date {
+  padding: 10px;
+}
+
+.newOffers__trucks,
+.newOffers__carrierWrap,
+.newOffers__containerWrap,
+.newOffers__cityWrap,
+.newOffers__innerItem {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+.newOffers__trucks {
+  width: 100px;
+}
+
+.newOffers__carrierWrap {
+  width: 170px;
+}
+
+.newOffers__containerWrap {
+  width: 250px;
+}
+
+.newOffers__cityWrap {
+  width: 180px;
+}
+
+.newOffers__someName {
+  margin-left: 14px;
+}
+
+.newOffers__top {
+  align-items: center;
+}
+
+.offers__flex {
+  display: flex;
+  align-items: center;
+  /*justify-content: space-between;*/
+  justify-content: flex-start;
+}

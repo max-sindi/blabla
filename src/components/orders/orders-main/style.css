@@ -1,0 +1,12 @@
+.iconContainerRight{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cellAlign{
+    text-align: center
+}
+
+td {
+    border-right: solid 1px silver;
+}

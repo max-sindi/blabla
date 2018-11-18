@@ -1,0 +1,149 @@
+.input.input {
+  font-family: 'Roboto';
+  font-size: 14px;
+  color: #3e3f42;
+  border-radius: 6px;
+  border: solid 1px #dae7ff;
+}
+
+.input input {
+  padding: 14px 16px;
+}
+
+.input__focus {
+  border-color: #4786ff;
+}
+
+.input__error {
+  border-color: #fa607e;
+}
+
+.input__valid {
+  border-color: #30cc52;
+}
+
+.input__disabled {
+  color: #c6c8c9;
+}
+
+.input__root {}
+
+.input__iconWrap.input__iconWrap {
+  max-height: 100%;
+}
+
+.input__root .label {
+  margin-bottom: 5px;
+  color: #9ea0a5;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+
+.labelTypography.labelTypography {
+  color: #9ea0a5;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.labelFocused.labelFocused.labelFocused {
+  color: #4786ff;
+}
+
+.checkboxBorder.checkboxBorder.checkboxBorder {
+  color: #4786ff;
+}
+
+.checkbox.checkbox.checkbox {
+  color: #0097ff;
+}
+.checkbox__checked.checkbox__checked.checkbox__checked {
+  color: #0097ff;
+}
+.checkbox__disabled.checkbox__disabled.checkbox__disabled {
+  color: rgba(218, 231, 255, 0.54);
+}
+
+.formLabel.formLabel {
+  color: #343a3e;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+}
+
+.formLabelRight {
+  margin-left: 11px;
+}
+
+.button.button {
+  min-width: 300px;
+  padding: 20px;
+  font-weight: 500;
+  border-radius: 6px;
+  color: #fff;
+  text-align: center;
+}
+
+.button__blue.button__blue.button__blue {
+  background-color: #4786ff;
+  color: #fff;
+}
+
+.button__green.button__green.button__green {
+  background-color: #30cc52;
+}
+
+.button__orange.button__orange.button__orange {
+  background-color: #fdb44d;
+}
+
+.button__pink.button__pink.button__pink {
+  background-color: #fedfe5;
+  color: #fa607e;
+}
+
+.button__red.button__red.button__red {
+  background-color: #fa607e;
+}
+
+.button__lightBlue.button__lightBlue {
+  background-color: #dae7ff;
+  color: #254d9b;
+}
+
+.button__disabled.button__disabled.button__disabled {
+  background-color: #f3f3f3;
+  color: #98a0a6;
+}
+
+.button__whiteTab.button__whiteTab.button__whiteTab {
+  background-color: #fff;
+  color: #4786ff;
+  border: 1px solid #dae7ff;
+}
+
+.button__transparent.button__transparent {
+  background-color: transparent;
+  border: none;
+  color: rgba(0, 0, 0, 0.38);
+}
+
+.select {
+
+}
+
+.select__blue {
+
+}
+
+.asyncSelectContainer {
+  width: 100%;
+}
+
+.select__qqqqqqqqq.select__qqqqqqqqq.select__qqqqqqqqq {
+  background-color: red;
+}
+
+.select__wwwwwwwwww.select__wwwwwwwwww.select__wwwwwwwwww {
+  background-color: red;
+}

@@ -1,0 +1,70 @@
+.stepperRoot.stepperRoot.stepperRoot {
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+}
+
+.stepContentRoot.stepContentRoot.stepContentRoot {
+  margin-top: 14px;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-bottom: 25px;
+  padding-left: 0;
+  padding-right: 0;
+  border-left: none;
+}
+
+.stepperRoot.stepperRoot.stepperRoot .stepperButton svg {
+  color: #4786ff;
+  display: none;
+}
+
+.stepTitle.stepTitle {
+  font-size: 12px;
+  font-family: 'Lato', sans-serif;
+  color: #98a0a6;
+  text-transform: uppercase;
+}
+
+.ml8minus.ml8minus.ml8minus {
+  margin-left: -8px;
+}
+
+.stepperSideShift.stepperSideShift.stepperSideShift {
+  margin-right: -12px;
+}
+
+.resetSidePaddings.resetSidePaddings.resetSidePaddings {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.formRoot.formRoot.formRoot {
+  /* margin-top: 22px; */
+  margin-left: 0;
+}
+
+.mb20.mb20.mb20 {
+  margin-bottom: 20px;
+}
+
+.blueColor.blueColor.blueColor {
+  color: #4786ff;
+}
+
+.bold.bold.bold {
+  font-weight: 600;
+}
+
+.ml5.ml5.ml5 {
+  margin-left: 5px;
+}
+
+.userSelected.userSelected.userSelected:before {
+  content: '';
+  position: absolute;
+  top: 55px;
+  width: calc(100% - 32px);
+  height: 1px;
+  background-color: #dae7ff;
+}

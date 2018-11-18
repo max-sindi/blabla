@@ -1,0 +1,22 @@
+.tableFilter .field{
+    padding: .5em 1.5em;
+}
+
+.tableFilter .field.xs{
+    width: 1em;
+}
+.tableFilter .field.sm{
+    width: 2em;
+}
+.tableFilter .field.md{
+    width: 4em;
+}
+.tableFilter .field.xl{
+    width: 8em;
+}
+.tableFilter .field.xl{
+    width: 12em;
+}
+.tableFilter .field.full{
+    width: 100%;
+}

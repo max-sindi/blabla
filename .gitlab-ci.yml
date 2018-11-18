@@ -1,0 +1,71 @@
+stages:
+  - build
+  # - test
+  - release
+  - deploy
+
+variables:
+  BUILD_VERSION: $CI_PIPELINE_IID
+  BUILD_IMAGE: $CI_REGISTRY_IMAGE/$CI_COMMIT_REF_NAME:$CI_PIPELINE_IID
+  LATEST_IMAGE: $CI_REGISTRY_IMAGE/$CI_COMMIT_REF_NAME:latest
+  DOCKER_HOST: "tcp://localhost:2375"
+
+build:
+  stage: build
+  image: docker:latest
+  services:
+    - docker:dind
+
+  before_script:
+    - docker info
+    - docker login -u gitlab-ci-token -p $CI_JOB_TOKEN $CI_REGISTRY
+
+  script:
+    - echo "Building the app"
+    - docker build --pull -t $BUILD_IMAGE .
+    - docker push $BUILD_IMAGE
+
+release:
+  stage: release
+  image: docker:latest
+  services:
+    - docker:dind
+
+  before_script:
+    - docker info
+    - docker login -u gitlab-ci-token -p $CI_JOB_TOKEN $CI_REGISTRY
+
+  script:
+    - echo "Release the app"
+    - docker pull $BUILD_IMAGE
+    - docker tag $BUILD_IMAGE $LATEST_IMAGE
+    - docker push $LATEST_IMAGE
+
+  only:
+    - development
+
+deploy:test:
+  stage: deploy
+  image: linkyard/docker-helm
+
+  environment:
+    name: test
+    url: http://goltruck.com
+
+  before_script:
+    - helm init --client-only --service-account helm
+
+  script:
+    - export RELEASE_NAME="goltruck-web"
+    - export NAMESPACE="goltruck-test"
+    - export DEPLOYS=$(helm ls --namespace $NAMESPACE| awk '{print $1}' | grep "^$RELEASE_NAME$" | wc -l)
+    - |
+      if [ ${DEPLOYS} -eq 0 ]; then
+        echo "Install helm chart $RELEASE_NAME";
+        helm install -f helm/environments/test.yaml --name $RELEASE_NAME --namespace $NAMESPACE helm/;
+      else
+        echo "Upgrade helm chart $RELEASE_NAME";
+        helm upgrade -f helm/environments/test.yaml --namespace $NAMESPACE --set image.tag=$BUILD_VERSION $RELEASE_NAME helm/;
+      fi
+  only:
+    - development

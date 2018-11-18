@@ -1,0 +1,25 @@
+.formField {
+    position: relative;
+    display: block;
+}
+.formField.inline{
+    display: inline-block;
+}
+.formField.xs {
+    width: 1em;
+};
+.formField.sm {
+    width: 2em;
+};
+.formField.md {
+    width: 4em;
+};
+.formField.xl {
+    width: 8em;
+};
+.formField.xxl {
+    width: 12em;
+};
+.formField.full {
+    width: 100%;
+};

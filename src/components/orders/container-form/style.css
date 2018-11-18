@@ -1,0 +1,31 @@
+.modalForm {
+    width: 90%;
+    height: 80vh;
+    padding-top: 50px;
+    margin: 0 auto;
+}
+
+.formControl {
+    margin: 16px;
+    width: 100%;
+    min-width: 200px;
+    max-width: 300px;
+}
+
+.group {
+    margin: 16px 0;
+}
+
+.fieldsMargin {
+    margin: 10px;
+}
+
+.formContainer {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.containersFormInner > div {
+  margin: 0 30px;
+  width: 50%;
+}

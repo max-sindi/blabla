@@ -1,0 +1,41 @@
+{
+  "transpileOnly": true,
+  "baseUrl": ".",
+  "rules": {},
+    "compilerOptions": {
+      "baseUrl": ".",
+      "outDir": "build/dist",
+      "module": "esnext",
+      "target": "es5",
+      "lib": ["es6", "dom"],
+      "sourceMap": true,
+      "allowJs": true,
+      "jsx": "react",
+      "moduleResolution": "node",
+      "forceConsistentCasingInFileNames": true,
+      "noImplicitReturns": false,
+      "noImplicitThis": true,
+      "noImplicitAny": false,
+      "strictNullChecks": false,
+      "suppressImplicitAnyIndexErrors": true,
+      "noUnusedLocals": false
+    },
+    "include":[
+      "src"
+    ],
+    "exclude": [
+      "node_modules/*",
+      "config",
+      "build",
+      "helm",
+      "public",
+      "scripts",
+      "acceptance-tests",
+      "webpack",
+      "jest",
+      "src/setupTests.ts",
+      "src/components/UI/direction-map/*",
+      "stub"
+    ]
+  }
+  

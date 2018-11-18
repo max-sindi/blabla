@@ -1,0 +1,33 @@
+.conatiner {
+    width: 90vw;
+}
+
+.iconContainerRight {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.chips {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.chip {
+    margin: 4px,
+}
+
+    .formControl {
+        margin: 16px;
+        min-width: 120px;
+        max-width: 300px;
+    }
+
+.group {
+    margin: 16px 0;
+}
+
+.tableContainer{
+    padding: 20px;
+    box-sizing: border-box;
+}

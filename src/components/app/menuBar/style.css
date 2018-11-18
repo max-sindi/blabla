@@ -1,0 +1,14 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.leftPart {
+    display: flex;
+    align-items: center;
+}
+
+.rightPart {
+
+}

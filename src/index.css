@@ -1,0 +1,97 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #fff;
+    /* fallback for old browsers */
+    /* background: -webkit-linear-gradient(to right, #D6A4A4, #DAE2F8); */
+    /* Chrome 10-25, Safari 5.1-6 */
+    /* background: linear-gradient(to right, #D6A4A4, #DAE2F8); */
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+     & h1{
+        color: red;
+    }
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.blueBorder.blueBorder {
+  border: solid 1px #dae7ff;
+  border-radius: 6px;
+}
+
+.shadowNone.shadowNone {
+  box-shadow: none;
+}
+
+.p10.p10.p10 {
+  padding: 10px;
+}
+
+.mb20.mb20 {
+  margin-bottom: 20px;
+}
+
+.flex.flex {
+  display: flex;
+}
+
+.aic {
+  align-items: center;
+}
+
+.ttu.ttu {
+  text-transform: uppercase;
+}
+
+.c3e {
+  color: #3e3f42;
+}
+
+.fw500 {
+  font-weight: 500;
+}
+
+.w70 {
+  width: 70px;
+}
+
+.dn.dn {
+  display: none;
+}
+
+.flex.flex {
+  display: flex;
+}
+
+.jcsb.jcsb {
+  justify-content: space-between;
+}
+
+.fg1 {
+  flex-grow: 1;
+}
+
+.w100p {
+  width: 100%;
+}
+
+.mb7.mb7 {
+  margin-bottom: 7px;
+}
+
+.ml10.ml10 {
+  margin-left: 10px;
+}
+
+.ml20.ml20 {
+  margin-left: 20px;
+}
+
+.mb30.mb30 {
+  margin-bottom: 30px;
+}

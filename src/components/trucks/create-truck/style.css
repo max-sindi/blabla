@@ -1,0 +1,8 @@
+.iconContainerRight{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cellAlign{
+    text-align: center
+}

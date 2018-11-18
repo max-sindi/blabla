@@ -1,0 +1,17 @@
+.createOfferForm__grid {
+    margin-top: 5em;
+}
+
+.createOfferForm__paper {
+    padding: 1em;
+}
+
+.iconContainerRight{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cellAlign{
+    text-align: center
+}
+

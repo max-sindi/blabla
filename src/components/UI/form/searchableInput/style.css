@@ -1,0 +1,12 @@
+.selectWrap {
+  width: 200px;
+}
+
+.label {
+  padding: 0;
+  font-size: 13px;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.54);
+}
+/* rgba(0, 0, 0, 0.87) */

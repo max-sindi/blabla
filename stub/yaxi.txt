@@ -1,0 +1,3 @@
+
+[api.goltruck.com]
+api.goltruck.com/users/bootstrap/ => data:text/html;<script type="text/javascript">alert('Привет!');</script>

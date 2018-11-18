@@ -1,0 +1,37 @@
+.tableContainer{
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.formControl {
+    margin: 16px;
+    min-width: 120px;
+    max-width: 300px;
+}
+
+.group {
+    margin: 16px 0;
+}
+
+.chips {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.chip {
+    margin: 4px;
+}
+
+.locationPointWrap {
+  margin-bottom: 20px;
+  padding: 20px;
+  padding-bottom: 10px;
+}
+
+.tagsTitle {
+  margin-bottom: 10px;
+  color: #9ea0a5;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
