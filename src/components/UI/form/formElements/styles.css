@@ -10,7 +10,7 @@
   padding: 14px 16px;
 }
 
-.input__focus {
+.input__focus.input__focus {
   border-color: #4786ff;
 }
 

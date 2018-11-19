@@ -21,16 +21,10 @@ class TagSearch extends React.Component {
           padding: '15px 20px 5px 10px',
           border: '1px solid #dae7ff',
           borderRadius: 6,
-          pointer: 'text',
+          cursor: 'text',
           '&:hover': {
-            borderColor: '#dae7ff',
+            borderColor: '#4786ff',
           }
-        }
-      },
-      controlIsFocused: current =>{
-        return {
-          ...current,
-          borderColor: 'red'
         }
       },
       valueContainer: current => {
@@ -92,7 +86,7 @@ class TagSearch extends React.Component {
     }
 
     const DropdownIndicator = props => {
-      return <Add style={{ color: '#4786ff'}}/>
+      return <Add style={{ color: '#4786ff', marginBottom: 10 }}/>
     }
 
     return (

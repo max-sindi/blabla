@@ -41,3 +41,15 @@
 .containers__lastTableCell {
   position: relative;
 }
+
+.row {
+  display: flex;
+  border: 0.5px solid #dae7ff;
+}
+
+.row__cell {
+  flex-grow: 1;
+  border: 0.5px solid #dae7ff;
+}
+
+.row__cellValue {}

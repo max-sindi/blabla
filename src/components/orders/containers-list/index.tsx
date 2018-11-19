@@ -47,20 +47,6 @@ export default class ContainersList extends React.Component<IProps, IState> {
     price: 'price'
   };
 
-  // public serializeFromServerTemplate = {
-  //   // containerLine: 'trailerLine',
-  //   trailerLine: 'containerLine',
-  //   // containerType: 'trailerType',
-  //   trailerType: 'containerType',
-  //   cargoName: 'cargoName',
-  //   cargoWeight: 'cargoWeight',
-  //   // cargoPackageType: 'packageType',
-  //   packageType: 'cargoPackageType',
-  //   uniqueId: 'uniqueId',
-  //   genset_temperature: 'genset_temperature',
-  //   price: 'price'
-  // };
-
   public editContainer = (container: any) => {
     return () => {
       this.props.edit(container);
@@ -127,68 +113,96 @@ export default class ContainersList extends React.Component<IProps, IState> {
 
   public render() {
     return (
-      <table>
-        <thead>
-          <tr>
-            <th className={styles.cell}>Тип Контейнера</th>
-            <th className={styles.cell}>Линия Контейнера</th>
-            <th className={styles.cell}>Назавание Груза</th>
-            <th className={styles.cell}>Вес Груза</th>
-            <th className={styles.cell}>Температура</th>
-            <th className={styles.cell}>Вид Упаковки</th>
-            <th className={styles.cell}>Редактировать</th>
-            <th className={styles.cell}>Количество</th>
-            <th className={styles.cell}>Цена</th>
-          </tr>
-        </thead>
-        <tbody>
+        <div>
           {this.props.list.map((row: any, index: any) => {
             const serialized = serialize(this.serializeTemplate, row);
-
             return (
-              <tr
+              <div
+                className={styles.row}
                 key={serialized.uniqueId}
               >
-                <td>
-                  {this.props.getName(
-                    'containerTypeList',
-                    serialized.containerType
-                  )}
-                </td>
-                <td>
-                  {this.props.getName(
-                    'containerLineList',
-                    serialized.containerLine
-                  )}
-                </td>
-                <td>{serialized.cargoName}</td>
-                <td>{serialized.cargoWeight}</td>
-                <td>{serialized.genset_temperature}</td>
-                <td>{serialized.cargoPackageType}</td>
-                <td>
+                <div className={styles.row__cell}>
+                  <div className={styles.row__cellTitle}>
+                    Тип Контейнера
+                  </div>
+                  <div className={styles.row__cellValue}>
+                    {this.props.getName(
+                      'containerTypeList',
+                      serialized.containerType
+                    )}
+                  </div>
+                </div>
+                <div className={styles.row__cell}>
+                  <div className={styles.row__cellTitle}>
+                    Линия
+                  </div>
+                  <div className={styles.row__cellValue}>
+                    {this.props.getName(
+                      'containerLineList',
+                      serialized.containerLine
+                    )}
+                  </div>
+                </div>
+                <div className={styles.row__cell}>
+                  <div className={styles.row__cellTitle}>
+                    Назавание Груза
+                  </div>
+                  <div className={styles.row__cellValue}>
+                    {serialized.cargoName}
+                  </div>
+                 </div>
+                <div className={styles.row__cell}>
+                  <div className={styles.row__cellTitle}>
+                    Вес Груза
+                  </div>
+                  <div className={styles.row__cellValue}>
+                    {serialized.cargoWeight}
+                  </div>
+                 </div>
+                <div className={styles.row__cell}>
+                  <div className={styles.row__cellTitle}>
+                    Температура
+                  </div>
+                  <div className={styles.row__cellValue}>
+                    {serialized.genset_temperature}
+                  </div>
+                 </div>
+                <div className={styles.row__cell}>
+                  <div className={styles.row__cellTitle}>
+                    Вид Упаковки
+                  </div>
+                  <div className={styles.row__cellValue}>
+                    {serialized.cargoPackageType}
+                  </div>
+                 </div>
+                {/* <div>{this.renderCopy(row)}</div> */}
+                <div className={styles.row__cell}>
+                  <div className={styles.row__cellTitle}>
+                    Цена
+                  </div>
+                  <div className={styles.row__cellValue}>
+                    {serialized.price}
+                  </div>
+                </div>
+                <div className={styles.row__cell}>
                   <IconButton
                     onClick={this.editContainer(row)}
                     color="primary"
                     aria-label="Add"
-                  >
-                    <Edit />
-                  </IconButton>
-                </td>
-                <td>{this.renderCopy(row)}</td>
-                <td className={styles.containers__lastTableCell}>
-                  {serialized.price}
+                    >
+                      <Edit />
+                    </IconButton>
                   <button
                     className={styles.container__deleteButton}
                     onClick={() => this.deleteContainer(index)}
-                  >
-                    +
-                  </button>
-                </td>
-              </tr>
+                    >
+                      +
+                    </button>
+                </div>
+              </div>
             );
           })}
-        </tbody>
-      </table>
+        </div>
     );
   }
 }

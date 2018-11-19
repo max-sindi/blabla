@@ -25,6 +25,11 @@ class AsyncSelectCustom extends React.Component<any, any> {
           return {
             ...current,
             border: 'solid 1px #e4e8ee',
+            cursor: 'text',
+            '&:hover': {
+              borderColor: '#4786ff',
+              borderWidth: 1,
+            }
           }
         },
         indicatorSeparator: () => {

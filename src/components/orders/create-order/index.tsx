@@ -169,7 +169,7 @@ class CreateOrder extends BasePageComponent<any, IState> {
     return (
       <ErrorBoundary>
         <Grid>
-          <Paper className={styles.conatiner}>
+          <Paper className={styles.conatiner} style={{margin: '0 auto'}}>
             <CardContent>
               <Grid container={true} spacing={16} direction="column">
                 <Grid>
@@ -192,9 +192,16 @@ class CreateOrder extends BasePageComponent<any, IState> {
                   />
                 </Grid>
               </Grid>
-              <Grid container={true} direction="row">
-                <Grid sm={10} item={true}>
+              <Grid sm={12} container={true} direction="row">
+                <Grid sm={12} item={true}>
                   <div className={styles.tableContainer}>
+                    <IconButton
+                      onClick={this.toggleContainerForm}
+                      color="primary"
+                      aria-label="Add"
+                    >
+                      <AddIcon/>
+                    </IconButton>
                     <ContainersList
                       getName={this.props.getEnumLabel}
                       edit={this.editContainer}
@@ -205,18 +212,11 @@ class CreateOrder extends BasePageComponent<any, IState> {
                     />
                   </div>
                 </Grid>
-                <Grid sm={1} item={true} container={true} direction="row">
-                  <Grid className={styles.iconContainerRight}>
-                    <IconButton
-                      onClick={this.toggleContainerForm}
-                      color="primary"
-                      aria-label="Add"
-                    >
-                      <AddIcon/>
-                    </IconButton>
-                  </Grid>
+                {/* <Grid sm={1} item={true} container={true} direction="row"> */}
+                  {/* <Grid className={styles.iconContainerRight}>
+                  </Grid> */}
                   {this.containerFormRender()}
-                </Grid>
+                {/* </Grid> */}
               </Grid>
               <Grid>
                 <Button onClick={this.saveOrder} data-buttontype="green" style={{ minWidth: 230 }}>
